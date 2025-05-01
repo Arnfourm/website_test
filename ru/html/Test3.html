@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тест по теме "Качество нейронных сетей"</title>
+    <link rel="stylesheet" href="../../css/styleTests.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="instruction">
+        <h2>Тест по теме "Качество нейронных сетей"</h2>
+        <p>Тест содержит в себе 11 вопросов, для начала прохождения нажмите кнопку ниже.</p>
+        <p>Для окончания теста нажмите кнопку "Завершить тест". Будьте внимательны, так как после завершения теста изменить ответы будет невозможно.</p>
+        <p>Удачи!</p>
+        <button class="buttonInstr" id="back" onclick="GoBack()">Назад</button>
+        <button class="buttonInstr" id="start" onclick="Start()">Начать!</button>
+    </div>
+
+    <div id="test">
+        <p>Выберите один или несколько вариантов ответа:</p>
+        <form id="testForm">
+            <fieldset>
+                <legend>1. При загрузке данных из стандартных наборов данных Keras функция load_data() возвращает следующие данные</legend>
+                <label><input type="checkbox">x_validation</label>
+                <label><input type="checkbox" value="1">x_train</label>
+                <label><input type="checkbox">y_data</label>
+                <label><input type="checkbox" value="1">y_test</label>
+                <label><input type="checkbox">y_validation</label>
+                <label><input type="checkbox">x_data</label>
+                <label><input type="checkbox" value="1">y_train</label>
+                <label><input type="checkbox" value="1">x_test</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>2. Верные утверждения про проверочный набор данных в Keras и TensorFlow</legend>
+                <label><input type="checkbox">Проверяет полностью обученную нейронную сеть после ее обучения и дает истинную оценку качества модели</label>
+                <label><input type="checkbox">Загружается автоматически при вызове функции load_data()</label>
+                <label><input type="checkbox" value="1">Его можно выделить при помощи параметра validation_split</label>
+                <label><input type="checkbox" value="1">Применяется для подбора гиперпараметров нейронной сети</label>
+                <label><input type="checkbox">Применяется для подбора параметров нейронной сети</label>
+                <label><input type="checkbox" value="1">На основе оценок качества модели на проверочном наборе данных можно сделать заключение о переобучении модели нейронной сети</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>3. Высокое качество модели при проверке на тренировочных данных и одновременно низкое качество при проверке на тестовом наборе говорит о том, что</legend>
+                <label><input name="question3" type="radio" value="1">Модель переобучилась</label>
+                <label><input name="question3" type="radio">Задача решена</label>
+                <label><input name="question3" type="radio">Задача нерешаема в принципе</label>
+                <label><input name="question3" type="radio">Нужно сделать еще несколько эпох обучения</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>4. Для борьбы с переобучением можно</legend>
+                <label><input type="checkbox" value="1">Увеличить объем обучающей выборки</label>
+                <label><input type="checkbox">Ничего не делать</label>
+                <label><input type="checkbox" value="1">Уменьшить сложность нейронной сети</label>
+                <label><input type="checkbox">Сделать еще несколько эпох обучения</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>5. Гиперпараметрами нейронной сети являются</legend>
+                <label><input type="checkbox">Веса нейронной сети</label>
+                <label><input type="checkbox" value="1">Количество слоев нейронной сети</label>
+                <label><input type="checkbox" value="1">Количество нейронов в слое нейронной сети</label>
+                <label><input type="checkbox">Смещение нейронов</label>
+                <label><input type="checkbox" value="1">Функции активации</label>
+                <label><input type="checkbox" value="1">Функция ошибок</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>6. Выберите параметры нейронной сети</legend>
+                <label><input type="checkbox" value="1">Веса нейронной сети</label>
+                <label><input type="checkbox">Количество слоев нейронной сети</label>
+                <label><input type="checkbox">Количество нейронов в слое нейронной сети</label>
+                <label><input type="checkbox" value="1">Смещение нейронов</label>
+                <label><input type="checkbox">Функции активации</label>
+                <label><input type="checkbox">Функция ошибок</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>7. Гиперпараметры определяются с помощью</legend>
+                <label><input name="question7" type="radio">Тестовый набор</label>
+                <label><input name="question7" type="radio">Тренировочный набор</label>
+                <label><input name="question7" type="radio">Параметрический набор</label>
+                <label><input name="question7" type="radio" value="1">Проверочный набор</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>8. Полносвязная нейронная сеть имеет следующие крупные недостатки</legend>
+                <label><input type="checkbox" value="1">С ростом числа входных данных слишком быстро растет число параметров, которые нужно обучить</label>
+                <label><input type="checkbox" value="1">Проблема затухающего градиента</label>
+                <label><input type="checkbox">Плохо решает задачу классификации</label>
+                <label><input type="checkbox">Плохо решает задачу регрессии</label>
+                <label><input type="checkbox">Недостатков нет</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>9. Параметр units слоя Dense обозначает</legend>
+                <label><input name="question9" type="radio">Количество слоев в нейронной сети</label>
+                <label><input name="question9" type="radio">Функцию активации в данном слое</label>
+                <label><input name="question9" type="radio" value="1">Количество нейронов в данном слое</label>
+                <label><input name="question9" type="radio">Количество входных данных</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>10. Количество нейронов на последнем слое зависит от</legend>
+                <label><input name="question10" type="radio">Возможности подбирать произвольно</label>
+                <label><input name="question10" type="radio" value="1">Количество категорий, которые нужно классифицировать</label>
+                <label><input name="question10" type="radio">Количество входных данных</label>
+                <label><input name="question10" type="radio">Количество слоев в нейронной сети</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>11. Dense — это</legend>
+                <label><input name="question11" type="radio">Нейрон</label>
+                <label><input name="question11" type="radio" value="1">Слой нейронной сети</label>
+                <label><input name="question11" type="radio">Модель нейронной сети</label>
+                <label><input name="question11" type="radio">Функция активации</label>
+            </fieldset>
+        </form>
+
+        <button class="buttonTest" onclick="CountResult()">Завершить тест</button>
+        <button class="buttonTest" onClick="Reset()">Попробовать заново</button>
+    </div>
+
+    <script src="../../js/scriptTests.js"> </script>
+</body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тест по теме "Нейронные сети"</title>
+    <link rel="stylesheet" href="../../css/styleTests.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="instruction">
+        <h2>Тест по теме "Нейронные сети"</h2>
+        <p>Тест содержит в себе 14 вопросов, для начала прохождения нажмите кнопку ниже.</p>
+        <p>Для окончания теста нажмите кнопку "Завершить тест". Будьте внимательны, так как после завершения теста изменить ответы будет невозможно.</p>
+        <p>Удачи!</p>
+        <button class="buttonInstr" id="back" onclick="GoBack()">Назад</button>
+        <button class="buttonInstr" id="start" onclick="Start()">Начать!</button>
+    </div>
+
+    <main id="test">
+        <p>Выберите один или несколько вариантов ответа:</p>
+        <form id="testForm">
+            <fieldset>
+                <legend>1. Выберите верные утверждения о глубокой нейронной сети</legend>
+                <label><input type="checkbox" value="1">Это один из методов машинного обучения</label>
+                <label><input type="checkbox" value="1">Сеть из простых вычислительных элементов – искусственных нейронов</label>
+                <label><input type="checkbox">Полностью повторяет устройство нейронной сети человеческого головного мозга</label>
+                <label><input type="checkbox">Единственный метод создания систем искусственного интеллекта</label>
+                <label><input type="checkbox" value="1">Модель искусственного нейрона придумана на основе устройства нейрона в мозгу человека</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>2. Почему активное практическое применение искусственных нейронных сетей стало возможным именно сейчас?</legend>
+                <label><input type="checkbox">Разработаны базовые концепции нейронных сетей: свёрточные нейронные сети, алгоритм обратного распространения ошибки</label>
+                <label><input type="checkbox" value="1">Появились многоядерные процессоры и графические ускорители GPU</label>
+                <label><input type="checkbox" value="1">Накопилось огромное количество данных</label>
+                <label><input type="checkbox">Появились новые задачи, которые можно решить с помощью искусственных нейронных сетей</label>
+                <label><input type="checkbox">Придумана модель искусственного нейрона</label>
+                <label><input type="checkbox" value="1">Произошли качественные улучшения алгоритмов оптимизации обучения, функций активации</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>3. Можно сказать, что глубокое обучение является подразделом следующих областей</legend>
+                <label><input type="checkbox">Высшая математика</label>
+                <label><input type="checkbox">Линейная алгебра</label>
+                <label><input type="checkbox" value="1">Машинное обучение</label>
+                <label><input type="checkbox">Программирование</label>
+                <label><input type="checkbox">Компьютерные сети</label>
+                <label><input type="checkbox" value="1">Искусственный интеллект</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>4. Машинное обучение, а значит, и глубокие нейронные сети на выходе дают нам</legend>
+                <label><input name="question4" type="radio">Прибыль</label>
+                <label><input name="question4" type="radio" value="1">Правило</label>
+                <label><input name="question4" type="radio">Пользу</label>
+                <label><input name="question4" type="radio">Ответы</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>5. Нейронные сети на данный момент способны решать следующие задачи</legend>
+                <label><input type="checkbox">Осознавать себя</label>
+                <label><input type="checkbox" value="1">Классифицировать изображения на уровне человека</label>
+                <label><input type="checkbox" value="1">Распознавать речь на уровне человека</label>
+                <label><input type="checkbox">Воссоздавать подобные себе алгоритмы</label>
+                <label><input type="checkbox" value="1">Управлять автомобилем на уровне, сравнимом с человеком</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>6. Методика глубокого обучения имеет важные характеристики, отличающие ее от методики машинного обучения</legend>
+                <label><input type="checkbox">На основе данных и правильных ответов создает правила</label>
+                <label><input type="checkbox" value="1">Поэтапно, послойно конструирует все более сложные представления</label>
+                <label><input type="checkbox">На основе правил и данных дает ответы</label>
+                <label><input type="checkbox" value="1">Исследует промежуточные представления совместно, за счет чего каждый слой обновляется в соответствии с информацией, полученной от представлений других слоев</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>7. Успешности нейронных сетей в наше время поспособствовало создание и усовершенствование следующих алгоритмов</legend>
+                <label><input type="checkbox" value="1">Усовершенствование функций активации</label>
+                <label><input type="checkbox">Создание алгоритма обратного распространения ошибки</label>
+                <label><input type="checkbox">Создание сверточных нейронных сетей</label>
+                <label><input type="checkbox" value="1">Лучшие схемы оптимизации, такие как RMSProp и Adam</label>
+                <label><input type="checkbox">Создание алгоритма долгой краткосрочной памяти</label>
+                <label><input type="checkbox" value="1">Более оптимальные схемы инициализации весов</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>8. В 2014–2016-х годах открыты более совершенные способы распространения градиента, которые помогли совершить прорыв в развитии глубокого обучения</legend>
+                <label><input type="checkbox">Алгоритм обратного распространения ошибки</label>
+                <label><input type="checkbox" value="1">Пакетная нормализация</label>
+                <label><input type="checkbox">Алгоритм долгой краткосрочной памяти</label>
+                <label><input type="checkbox" value="1">Обходные связи</label>
+                <label><input type="checkbox" value="1">Отделимые свертки</label>
+                <label><input type="checkbox">Сверточные нейронные сети</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>9. Что делает сумматорная функция нейрона?</legend>
+                <label><input name="question9" type="radio" value="1">Суммирует произведения входных значений на их веса</label>
+                <label><input name="question9" type="radio">Суммирует выходные значения</label>
+                <label><input name="question9" type="radio">Суммирует веса нейронной сети</label>
+                <label><input name="question9" type="radio">Суммирует входные значения</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>10. Какие базовые типы слоев нейронной сети вы знаете?</legend>
+                <label><input type="checkbox" value="1">Выходной слой</label>
+                <label><input type="checkbox">Дополнительный слой</label>
+                <label><input type="checkbox" value="1">Скрытый слой</label>
+                <label><input type="checkbox" value="1">Входной слой</label>
+                <label><input type="checkbox">Суммирующий слой</label>
+                <label><input type="checkbox">Пороговый слой</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>11. Вход искусственной нейронной сети — это</legend>
+                <label><input name="question11" type="radio">Математическая функция</label>
+                <label><input name="question11" type="radio">Дендриты</label>
+                <label><input name="question11" type="radio" value="1">Математический вектор чисел</label>
+                <label><input name="question11" type="radio">Аксоны</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>12. Что такое функция активации?</legend>
+                <label><input name="question12" type="radio">Синапс</label>
+                <label><input name="question12" type="radio">Сумма произведений входных данных на их веса</label>
+                <label><input name="question12" type="radio">Функция, преобразовывающая входные сигналы перед их попаданием в сумматор</label>
+                <label><input name="question12" type="radio" value="1">Функция, преобразовывающая результат суммирующей функции в некий ответ, который можно интерпретировать</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>13. Веса искусственной нейронной сети — это</legend>
+                <label><input name="question13" type="radio">Аксоны</label>
+                <label><input name="question13" type="radio">Функция, которая выдает ответ</label>
+                <label><input name="question13" type="radio" value="1">Математический вектор чисел</label>
+                <label><input name="question13" type="radio">Синапсы</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>14. Нейронная сеть с возможностью обратных связей называется</legend>
+                <label><input name="question14" type="radio">Сверточная нейронная сеть</label>
+                <label><input name="question14" type="radio">Полносвязная нейронная сеть</label>
+                <label><input name="question14" type="radio">Обратная нейронная сеть</label>
+                <label><input name="question14" type="radio" value="1">Рекуррентная нейронная сеть</label>
+            </fieldset>
+        </form>
+
+        <button class="buttonTest" onclick="CountResult()">Завершить тест</button>
+        <button class="buttonTest" onClick="Reset()">Попробовать заново</button>
+    </main>
+
+    <script src="../../js/scriptTests.js"> </script>
+</body>
+</html>

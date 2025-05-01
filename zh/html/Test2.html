@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тест по теме "Библиотеки нейронных сетей"</title>
+    <link rel="stylesheet" href="../../css/styleTests.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="instruction">
+        <h2>测试主题："用于创建神经网络的库"</h2>
+        <p>测试包括 8 个问题，要开始测试，请单击下面的按钮。</p>
+        <p>要结束测试，请单击 “结束测试 ”按钮。 请注意，测试完成后将无法更改答案。</p>
+        <p>祝你好运!</p>
+        <button class="buttonInstr" id="back" onclick="GoBack()">返回</button>
+        <button class="buttonInstr" id="start" onclick="Start()">去!</button>
+    </div>
+
+    <div id="test">
+        <p>请选择一个或多个答案选项：</p>
+        <form id="testForm">
+            <fieldset>
+                <legend>1. 神经网络可以解决哪两个基本问题？</legend>
+                <label><input type="checkbox">优化</label>
+                <label><input type="checkbox" value="1">分类</label>
+                <label><input type="checkbox" value="1">回归</label>
+                <label><input type="checkbox">搜索</label>
+                <label><input type="checkbox">系统化</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>2. 神经网络培训有哪些类型？</legend>
+                <label><input type="checkbox" value="1">教师训练</label>
+                <label><input type="checkbox">基于规则的学习</label>
+                <label><input type="checkbox">书本学习</label>
+                <label><input type="checkbox">无教师学习</label>
+                <label><input type="checkbox" value="1">强化学习</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>3. 训练神经网络的传统方法需要深入了解</legend>
+                <label><input type="checkbox" value="1">某些数学领域</label>
+                <label><input type="checkbox">大脑神经网络的结构</label>
+                <label><input type="checkbox" value="1">编程</label>
+                <label><input type="checkbox">生物学习的基本原理</label>
+                <label><input type="checkbox" value="1">多核处理器、多处理器系统、计算加速器</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>4. 请说出创建人工神经网络最常用的两个库的名称</legend>
+                <label><input type="checkbox">Caffe</label>
+                <label><input type="checkbox" value="1">TensorFlow</label>
+                <label><input type="checkbox">Theano</label>
+                <label><input type="checkbox" value="1">PyTorch</label>
+                <label><input type="checkbox">Darknet</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>5. 这有助于在学习过程中调整神经元的权重</legend>
+                <label><input name="question5" type="radio">学习算法</label>
+                <label><input name="question5" type="radio" value="1">误差反向传播算法</label>
+                <label><input name="question5" type="radio">注意力算法</label>
+                <label><input name="question5" type="radio">权重更新算法</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>6. 在没有教师指导的情况下训练出来的神经网络能够解决以下任务</legend>
+                <label><input type="checkbox">分类</label>
+                <label><input type="checkbox" value="1">聚类</label>
+                <label><input type="checkbox">回归</label>
+                <label><input type="checkbox">系统化</label>
+                <label><input type="checkbox" value="1">降维</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>7. 实现学习过程的方法有哪些</legend>
+                <label><input type="checkbox" value="1">全面培训</label>
+                <label><input type="checkbox">部分培训</label>
+                <label><input type="checkbox" value="1">在线培训</label>
+                <label><input type="checkbox" value="1">小型采样培训</label>
+                <label><input type="checkbox">强化学习</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>8. 请说出使用 TensorFlow 或 Theano 作为计算后端的顶级神经网络编程库的名称</legend>
+                <label><input name="question8" type="radio">Theano</label>
+                <label><input name="question8" type="radio" value="1">Keras</label>
+                <label><input name="question8" type="radio">PyTorch</label>
+                <label><input name="question8" type="radio">Caffe</label>
+                <label><input name="question8" type="radio">CNTK</label>
+            </fieldset>
+        </form>
+
+        <button class="buttonTest" onclick="CountResult()">结束测试</button>
+        <button class="buttonTest" onClick="Reset()">再试一次</button>
+    </div>
+
+    <script src="../../js/scriptTests.js"> </script>
+</body>
+</html>

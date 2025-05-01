@@ -1,0 +1,86 @@
+body{
+    overflow:hidden;
+    font-family: "Zen Kaku Gothic New", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+#test{
+    display: none;
+    margin:2% 12%;
+}    
+
+#instruction{
+    text-align: center;
+    margin:17% 10%;
+    font-size:18px;
+}
+#instruction h2{
+    font-family: "Noto Sans Mono", monospace;
+    font-weight:600;
+}
+.buttonInstr{
+    background: #CE4E4E;
+    border:none;
+    border-radius: 15px;
+    height:50px;
+    width: 175px;
+    font-size:18px;
+    overflow-y: hidden;
+    color:white;
+    transition: 0.5s;
+}
+.buttonInstr:hover{
+    background-color:#a92121;
+    transition: 0.5s;
+}
+
+#test p{
+    font-size:25px;
+    font-family: "Noto Sans Mono", monospace;
+    font-weight:600;
+}
+fieldset {
+    padding: 1%;
+    margin-bottom: 3%;
+    border-radius: 15px;
+    border-color:#DFE9F4;
+}
+fieldset:last-of-type {
+    margin-bottom: 1%;
+}
+legend{
+    font-size:19px;
+    border-radius: 7.5px;
+    border:2px #DFE9F4 solid;
+    padding:0.5% 1%;
+}
+label {
+    display: block;
+    margin: 1%;
+}
+input[type=radio],
+input[type=checkbox]{
+    accent-color:#CE4E4E;
+}
+
+.buttonTest{
+    background: #CE4E4E;
+    border:none;
+    border-radius: 15px;
+    height:50px;
+    width: 175px;
+    font-size:16px;
+    overflow-y: hidden;
+    color:white;
+    float:right;
+    margin:1.5% 0.5%;
+    transition: 0.5s;
+}
+.buttonTest:last-of-type{
+    width: 200px;
+}
+.buttonTest:hover{
+    background-color:#a92121;
+    transition: 0.5s;
+    font-size:17px;
+}

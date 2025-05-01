@@ -1,0 +1,208 @@
+*{
+    font-family: "Zen Kaku Gothic New", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+hr{
+    margin:1% 100px;
+}
+
+header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header > *{
+    margin: 0.5% 3% 0;
+}
+hr:first-of-type{
+    margin:0.5% 100px 1%;
+}
+header img{
+    width:11.5%;
+    cursor:pointer;
+}
+#headerButton{
+    background: #AA2525;
+    border: none;
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    font-size:15px;
+    transition: 0.5s;
+    overflow-y: hidden;
+}
+#headerButton a{
+    text-decoration: none;
+    color:white;
+    display:block;
+    line-height: 40px; 
+    transition: 0.5s;
+}
+#headerButton:hover{
+    background-color:#CE4E4E;
+    transition: 0.5s;
+}
+#headerButton a:hover{
+    color:white;
+    transition: 0.5s;
+    font-size:16.5px;
+}
+
+.sectionMainImg{
+    padding:1.5% 0;
+}
+.sectionMainImg img{
+    width:100%;
+    filter:blur(2.5px);
+    filter: brightness(65%);
+}
+.sectionMainImg h2{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    color:white;
+    font-size:35px;
+    text-align: center;
+    font-family: "Fira Sans", sans-serif;
+}
+
+.findForm{
+    display:flex;
+    margin: 0.5% 6.5%;
+}
+.findForm input{
+    border: none;
+    background-color: #E0E0E0;
+    border-radius: 0 7.5px 7.5px 0;
+    font-size: 17px;
+    width: 180px;
+    height: 42.5px;
+    outline: none;
+}
+.findForm button{
+    border: none;
+    background-color: #E0E0E0;
+    color: white;
+    border-radius: 7.5px 0 0 7.5px;
+    font-size: 16px;
+    width: 50px;
+    height: 42.5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    cursor:default;
+}
+.findForm button:before{
+    content: "\f002";
+    font-family: FontAwesome;
+    font-size: 16px;
+    color: #979797;
+}
+
+.unitsContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.units{
+    height:15%;
+    width: 50%;
+    margin:1%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.units:first-of-type{
+    margin-top:2%;
+}
+.units:last-of-type{
+    margin-bottom:1.75%
+}
+.units div{
+    width: 90%;
+    display:flex;
+    align-items: center;
+    background-color: #DFE9F4;
+    border-radius: 10px;
+    padding:3%;
+    font-size:18px;
+    overflow-y: hidden;
+}
+.units p{
+    font-size:20px;
+}
+.testIcon{
+    width: 10%;
+}
+.units button{
+    margin-top: 2.5%;
+    background: #CE4E4E;
+    border:none;
+    border-radius: 15px;
+    height:50px;
+    width: 20%;
+    font-size:18px;
+    overflow-y: hidden;
+}
+.units a{
+    color:white;
+    text-decoration: none;
+    display: block;
+    line-height: 50px; 
+    transition: 0.75s;
+}
+.units button:hover{
+    background-color:#a92121;
+    transition: 0.5s;
+    font-size:21px;
+}
+.units a:hover{
+    color:white;
+    transition: 0.01s;
+}
+
+footer{
+    background-color:#393939;
+    color:white;
+    height: 7vw;
+    margin-top: 4%;
+    display:flex;
+    align-items: center;
+    justify-content: right;
+    padding: 0% 3%;
+}
+.footerRightSide{
+    text-align: right;
+    font-size:1em;
+}
+
+
+@media screen and (max-width: 1000px) {
+    body {
+        background-color: black;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        text-align: center;
+        overflow: hidden;
+    }
+
+    header, main, footer, hr {
+        display: none;
+    }
+
+    body::before {
+        content: "Сайт не предназначен для данного формата экрана.";
+        font-size: 20px;
+        font-family: "Fira Sans", sans-serif;
+    }
+}

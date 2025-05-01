@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тест по теме "Библиотеки нейронных сетей"</title>
+    <link rel="stylesheet" href="../../css/styleTests.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="instruction">
+        <h2>Тест по теме "Библиотеки нейронных сетей"</h2>
+        <p>Тест содержит в себе 8 вопросов, для начала прохождения нажмите кнопку ниже.</p>
+        <p>Для окончания теста нажмите кнопку "Завершить тест". Будьте внимательны, так как после завершения теста изменить ответы будет невозможно.</p>
+        <p>Удачи!</p>
+        <button class="buttonInstr" id="back" onclick="GoBack()">Назад</button>
+        <button class="buttonInstr" id="start" onclick="Start()">Начать!</button>
+    </div>
+
+    <div id="test">
+        <p>Выберите один или несколько вариантов ответа:</p>
+        <form id="testForm">
+            <fieldset>
+                <legend>1. Какие две базовые задачи решают нейронные сети?</legend>
+                <label><input type="checkbox">Оптимизация</label>
+                <label><input type="checkbox" value="1">Классификация</label>
+                <label><input type="checkbox" value="1">Регрессия</label>
+                <label><input type="checkbox">Поиск</label>
+                <label><input type="checkbox">Систематизация</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>2. Какие типы обучения нейронной сети существуют?</legend>
+                <label><input type="checkbox" value="1">Обучение с учителем</label>
+                <label><input type="checkbox">Обучение на правилах</label>
+                <label><input type="checkbox">Обучение по книгам</label>
+                <label><input type="checkbox">Обучение без учителя</label>
+                <label><input type="checkbox" value="1">Обучение с подкреплением</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>3. Традиционный подход к обучению нейронных сетей требовал глубокого понимания</legend>
+                <label><input type="checkbox" value="1">Определенных разделов математики</label>
+                <label><input type="checkbox">Устройства нейронной сети головного мозга</label>
+                <label><input type="checkbox" value="1">Программирования</label>
+                <label><input type="checkbox">Базовых принципов обучения живых существ</label>
+                <label><input type="checkbox" value="1">Многоядерных процессоров, многопроцессорных систем, ускорителей вычислений</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>4. Назовите две наиболее популярные библиотеки для создания искусственных нейронных сетей</legend>
+                <label><input type="checkbox">Caffe</label>
+                <label><input type="checkbox" value="1">TensorFlow</label>
+                <label><input type="checkbox">Theano</label>
+                <label><input type="checkbox" value="1">PyTorch</label>
+                <label><input type="checkbox">Darknet</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>5. Что помогает корректировать веса нейронов в ходе обучения</legend>
+                <label><input name="question5" type="radio">Алгоритм обучения</label>
+                <label><input name="question5" type="radio" value="1">Алгоритм обратного распространения ошибки </label>
+                <label><input name="question5" type="radio">Алгоритм внимания</label>
+                <label><input name="question5" type="radio">Алгоритм обновления весов</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>6. Нейронная сеть, обучающаяся без учителя, способна решать следующие задачи</legend>
+                <label><input type="checkbox">Классификация</label>
+                <label><input type="checkbox" value="1">Кластеризация</label>
+                <label><input type="checkbox">Регрессия</label>
+                <label><input type="checkbox">Систематизация</label>
+                <label><input type="checkbox" value="1">Сокращение размерности</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>7. Существуют следующие подходы к реализации процесса обучения</legend>
+                <label><input type="checkbox" value="1">Полное обучение</label>
+                <label><input type="checkbox">Частичное обучение</label>
+                <label><input type="checkbox" value="1">Онлайн-обучение</label>
+                <label><input type="checkbox" value="1">Обучение на мини-выборках</label>
+                <label><input type="checkbox">Обучение с подкреплением</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>8. Назовите библиотеку программирования нейронных сетей верхнего уровня, которая использует в качестве вычислительного back-end TensorFlow или Theano</legend>
+                <label><input name="question8" type="radio">Theano</label>
+                <label><input name="question8" type="radio" value="1">Keras</label>
+                <label><input name="question8" type="radio">PyTorch</label>
+                <label><input name="question8" type="radio">Caffe</label>
+                <label><input name="question8" type="radio">CNTK</label>
+            </fieldset>
+        </form>
+
+        <button class="buttonTest" onclick="CountResult()">Завершить тест</button>
+        <button class="buttonTest" onClick="Reset()">Попробовать заново</button>
+    </div>
+
+    <script src="../../js/scriptTests.js"> </script>
+</body>
+</html>

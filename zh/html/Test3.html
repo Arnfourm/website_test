@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>测试主题：“神经网络的质量"</title>
+    <link rel="stylesheet" href="../../css/styleTests.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="instruction">
+        <h2>测试主题：“神经网络的质量"</h2>
+        <p>测试包括 11 个问题，要开始测试，请单击下面的按钮。</p>
+        <p>要结束测试，请单击 “结束测试 ”按钮。 请注意，测试完成后将无法更改答案。</p>
+        <p>祝你好运!</p>
+        <button class="buttonInstr" id="back" onclick="GoBack()">返回</button>
+        <button class="buttonInstr" id="start" onclick="Start()">去!</button>
+    </div>
+
+    <div id="test">
+        <p>请选择一个或多个答案选项：</p>
+        <form id="testForm">
+            <fieldset>
+                <legend>1. 从标准 Kears 数据集加载数据时，load_data() 函数会返回以下数据</legend>
+                <label><input type="checkbox">x_validation</label>
+                <label><input type="checkbox" value="1">x_train</label>
+                <label><input type="checkbox">y_data</label>
+                <label><input type="checkbox" value="1">y_test</label>
+                <label><input type="checkbox">y_validation</label>
+                <label><input type="checkbox">x_data</label>
+                <label><input type="checkbox" value="1">y_train</label>
+                <label><input type="checkbox" value="1">x_test</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>2. 选择有关 Keras 和 TensorFlow 验证数据集的正确说法</legend>
+                <label><input type="checkbox">检查训练完成后的神经网络，并给出模型质量的真实估计值</label>
+                <label><input type="checkbox">在调用 load_data() 时自动加载</label>
+                <label><input type="checkbox" value="1">可使用 validation_split 参数进行选择</label>
+                <label><input type="checkbox" value="1">用于选择神经网络的超参数</label>
+                <label><input type="checkbox">用于选择神经网络参数</label>
+                <label><input type="checkbox" value="1">根据对验证数据集的模型质量评估，可以得出神经网络模型已被重新训练的结论</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>3. 根据训练数据验证的模型质量很高，而根据测试集验证的模型质量却很低，这表明</legend>
+                <label><input name="question3" type="radio" value="1">模型重新训练</label>
+                <label><input name="question3" type="radio">问题成功解决</label>
+                <label><input name="question3" type="radio">问题原则上无法解决</label>
+                <label><input name="question3" type="radio">应该多做几次训练</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>4. 为了防止训练过度，你可以</legend>
+                <label><input type="checkbox" value="1">增加训练样本数量</label>
+                <label><input type="checkbox">不做任何事情</label>
+                <label><input type="checkbox" value="1">降低神经网络的复杂度</label>
+                <label><input type="checkbox">增加训练历元</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>5. 神经网络的超参数如下</legend>
+                <label><input type="checkbox">神经网络权重</label>
+                <label><input type="checkbox" value="1">神经网络层数</label>
+                <label><input type="checkbox" value="1">神经网络层中的神经元数</label>
+                <label><input type="checkbox">神经元偏置</label>
+                <label><input type="checkbox" value="1">激活函数</label>
+                <label><input type="checkbox" value="1">误差函数</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>6. 选择神经网络参数</legend>
+                <label><input type="checkbox" value="1">神经网络权重</label>
+                <label><input type="checkbox">神经网络层数</label>
+                <label><input type="checkbox">神经网络层中的神经元数</label>
+                <label><input type="checkbox" value="1">神经元偏置</label>
+                <label><input type="checkbox">激活函数</label>
+                <label><input type="checkbox">误差函数</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>7. 超参数由</legend>
+                <label><input name="question7" type="radio">测试集</label>
+                <label><input name="question7" type="radio">训练集</label>
+                <label><input name="question7" type="radio">参数集</label>
+                <label><input name="question7" type="radio" value="1">验证集</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>8. 全连接神经网络有以下主要缺点</legend>
+                <label><input type="checkbox" value="1">随着输入数据数量的增加，需要训练的参数数量增长过快</label>
+                <label><input type="checkbox" value="1">阻尼梯度问题</label>
+                <label><input type="checkbox">不能很好地解决分类问题</label>
+                <label><input type="checkbox">不能很好地解决回归问题</label>
+                <label><input type="checkbox">无缺点</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>9. Units 层的 Dense 参数表示</legend>
+                <label><input name="question9" type="radio">神经网络的层数</label>
+                <label><input name="question9" type="radio">给定层中的激活函数</label>
+                <label><input name="question9" type="radio" value="1">特定层中的神经元数量</label>
+                <label><input name="question9" type="radio">输入数据量</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>10. 最后一层的神经元数量取决于</legend>
+                <label><input name="question10" type="radio">随机选择的能力</label>
+                <label><input name="question10" type="radio" value="1">待分类类别的数量</label>
+                <label><input name="question10" type="radio">输入数据的数量</label>
+                <label><input name="question10" type="radio">神经网络的层数</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>11. Dense 它是</legend>
+                <label><input name="question11" type="radio">神经元</label>
+                <label><input name="question11" type="radio" value="1">神经网络层</label>
+                <label><input name="question11" type="radio">神经网络模型</label>
+                <label><input name="question11" type="radio">激活函数</label>
+            </fieldset>
+        </form>
+
+        <button class="buttonTest" onclick="CountResult()">结束测试</button>
+        <button class="buttonTest" onClick="Reset()">再试一次</button>
+    </div>
+
+    <script src="../../js/scriptTests.js"> </script>
+</body>
+</html>

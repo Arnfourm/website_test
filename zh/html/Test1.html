@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тест по теме "Нейронные сети"</title>
+    <link rel="stylesheet" href="../../css/styleTests.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="instruction">
+        <h2>测试主题："神经网络"</h2>
+        <p>测试包括 14 个问题，要开始测试，请单击下面的按钮。</p>
+        <p>要结束测试，请单击 “结束测试 ”按钮。 请注意，测试完成后将无法更改答案。</p>
+        <p>祝你好运!</p>
+        <button class="buttonInstr" id="back" onclick="GoBack()">返回</button>
+        <button class="buttonInstr" id="start" onclick="Start()">去!</button>
+    </div>
+
+    <div id="test">
+        <p>请选择一个或多个答案选项:</p>
+        <form id="testForm">
+            <fieldset>
+                <legend>1. 选择关于深度神经网络的正确说法</legend>
+                <label><input type="checkbox" value="1">是机器学习方法之一</label>
+                <label><input type="checkbox" value="1">一个由简单计算元素--人工神经元--组成的网络</label>
+                <label><input type="checkbox">完全重复人脑神经网络的结构</label>
+                <label><input type="checkbox">创建人工智能系统的唯一方法</label>
+                <label><input type="checkbox" value="1">人工神经元模型是在人脑神经元结构的基础上发明的</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>2. 为什么现在可以在实践中积极应用人工神经网络？</legend>
+                <label><input type="checkbox">神经网络的基本概念已经形成：卷积神经网络、误差反向传播算法</label>
+                <label><input type="checkbox" value="1">出现了多核处理器和 GPU 图形加速器</label>
+                <label><input type="checkbox" value="1">积累了大量数据</label>
+                <label><input type="checkbox">出现了可借助人工神经网络解决的新任务</label>
+                <label><input type="checkbox">发明了人工神经元模型</label>
+                <label><input type="checkbox" value="1">学习优化算法和激活函数有了质的飞跃</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>3. 我们可以说，深度学习是以下领域的一个子主题</legend>
+                <label><input type="checkbox">高等数学</label>
+                <label><input type="checkbox">线性代数</label>
+                <label><input type="checkbox" value="1">机器学习</label>
+                <label><input type="checkbox">编程</label>
+                <label><input type="checkbox">计算机网络</label>
+                <label><input type="checkbox" value="1">人工智能</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>4. 机器学习，以及深度神经网络最终会给我们带来</legend>
+                <label><input name="question4" type="radio">利润</label>
+                <label><input name="question4" type="radio" value="1">规则</label>
+                <label><input name="question4" type="radio">有用</label>
+                <label><input name="question4" type="radio">答案</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>5. 目前，神经网络能够执行以下任务</legend>
+                <label><input type="checkbox">自我意识</label>
+                <label><input type="checkbox" value="1">对人类图像进行分类</label>
+                <label><input type="checkbox" value="1">识别人类水平的语音</label>
+                <label><input type="checkbox">重新创建自相似算法</label>
+                <label><input type="checkbox" value="1">以人类水平驾驶汽车</label>
+            </fieldset>
+        
+            <fieldset>
+                <legend>6. 深度学习技术具有区别于机器学习技术的重要特征</legend>
+                <label><input type="checkbox">根据数据和正确答案创建规则</label>
+                <label><input type="checkbox" value="1">分阶段、逐层建立日益复杂的表征</label>
+                <label><input type="checkbox">根据规则和数据提供答案</label>
+                <label><input type="checkbox" value="1">共同探索中间表征，使每一层都能从其他层的表征中获取最新信息</label>
+            </fieldset>
+        
+            <fieldset>
+                <legend>7. 神经网络今天的成功得益于以下算法的创造和改进</legend>
+                <label><input type="checkbox" value="1">增强激活函数</label>
+                <label><input type="checkbox">创建误差反向传播算法</label>
+                <label><input type="checkbox">创建卷积神经网络</label>
+                <label><input type="checkbox" value="1">更好的优化方案，如 RMSProp 和 Adam</label>
+                <label><input type="checkbox">创建长短期记忆算法</label>
+                <label><input type="checkbox" value="1">更好的权重初始化方案</label>
+            </fieldset>
+        
+            <fieldset>
+                <legend>8. 2014-2016 年代，人们发现了更好的梯度传播方法，这有助于深度学习的发展取得突破性进展</legend>
+                <label><input type="checkbox">误差反向传播算法</label>
+                <label><input type="checkbox" value="1">批量归一化</label>
+                <label><input type="checkbox">长短期记忆算法</label>
+                <label><input type="checkbox" value="1">变通方法</label>
+                <label><input type="checkbox" value="1">可分离卷积</label>
+                <label><input type="checkbox">卷积神经网络</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>9. 神经元的加法器功能有什么作用？</legend>
+                <label><input name="question9" type="radio" value="1">通过权重汇总输入值的乘积</label>
+                <label><input name="question9" type="radio">总结输出值</label>
+                <label><input name="question9" type="radio">总结神经网络的权重</label>
+                <label><input name="question9" type="radio">总结输入值</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>10. 您知道哪些基本的神经网络层类型？</legend>
+                <label><input type="checkbox" value="1">输出层</label>
+                <label><input type="checkbox">附加层</label>
+                <label><input type="checkbox" value="1">隐藏层</label>
+                <label><input type="checkbox" value="1">输入层</label>
+                <label><input type="checkbox">总结层</label>
+                <label><input type="checkbox">阈值层</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>11. 人工神经网络输入 —</legend>
+                <label><input name="question11" type="radio">数学函数</label>
+                <label><input name="question11" type="radio">树突</label>
+                <label><input name="question11" type="radio" value="1">数学数字向量</label>
+                <label><input name="question11" type="radio">轴突</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>12. 什么是激活函数?</legend>
+                <label><input name="question12" type="radio">突触</label>
+                <label><input name="question12" type="radio">输入数据与权重的乘积之和</label>
+                <label><input name="question12" type="radio">在输入信号进入加法器之前对其进行转换的函数</label>
+                <label><input name="question12" type="radio" value="1">将汇总函数的结果转换为可解释响应的函数</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>13. 人工神经网络的权重是</legend>
+                <label><input name="question13" type="radio">轴突</label>
+                <label><input name="question13" type="radio">产生答案的函数</label>
+                <label><input name="question13" type="radio" value="1">输入值的系数</label>
+                <label><input name="question13" type="radio">输入函数的和</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>14. 以下哪一项不属于人工神经网络的一部分？</legend>
+                <label><input name="question14" type="radio">单元格</label>
+                <label><input name="question14" type="radio">神经元</label>
+                <label><input name="question14" type="radio">输入层</label>
+                <label><input name="question14" type="radio">突触</label>
+                <label><input name="question14" type="radio" value="1">计算机</label>
+            </fieldset>
+        </form>
+        <button class="buttonTest" onclick="CountResult()">结束测试</button>
+        <button class="buttonTest" onClick="Reset()">再试一次</button>
+    </div>
+
+    <script src="../../js/scriptTests.js"> </script>
+</body>
+</html>
